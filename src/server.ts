@@ -11,6 +11,7 @@ const port: number = serverConfig.PORT;
 /* * Below Line
 ** Registering all the routers and their cooresponding routes without app server
 */
+app.use(express.json());
 app.use('/api/v1', v1Router);
 //app.use(todoRouter);
 
